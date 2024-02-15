@@ -7,8 +7,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let json_template = serde_json::from_str(args.get(2).unwrap())?;
     let json = serde_json::from_str(&json_data)?;
 
-    let template = liquid_json::LiquidJson::new(json_template);
-    let result = template.render(&json)?;
+    let template = liquid_json::LiquidJson::new(json);
+    let result = template.render(&json_template)?;
 
     println!("{}", serde_json::to_string_pretty(&result)?);
     Ok(())
