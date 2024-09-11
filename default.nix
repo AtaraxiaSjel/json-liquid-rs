@@ -1,7 +1,7 @@
 { lib, rustPlatform }:
 rustPlatform.buildRustPackage {
   pname = "json-liquid-rs";
-  version = "1.0.0";
+  version = "1.0.2";
   src = lib.cleanSource ./.;
   cargoLock.lockFile = ./Cargo.lock;
 
