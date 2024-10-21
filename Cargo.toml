@@ -5,4 +5,4 @@ edition = "2021"
 
 [dependencies]
 liquid-json = { version = "0.6.1", default-features = false }
-serde_json = { version = "1.0.128", default-features = false }
+serde_json = { version = "1.0.132", default-features = false }
